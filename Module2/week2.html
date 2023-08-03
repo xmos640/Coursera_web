@@ -5,7 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    /********** Base styles **********/	
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+h1 {
+	margin: 15px;
+	text-align: center;
+	font-size: 150%;
+}
+
+.box {
+	border: 1px solid black;
+	background-color: #228822;
+	margin: 5px 10px 15px 10px;
+}
+
+.box-heading {
+	float: right;
+	position: relative;
+	right: -1px;
+	top: -1px;
+	min-width: 130px;
+	text-align: center;
+	margin: 0px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	padding: 5px;
+	color: #FFFFAA;
+	font-size: 125%;
+}
+
+.box-heading-1 {
+	background-color: #446666;
+}
+
+.box-heading-2 {
+	background-color: #666644;
+}
+
+.box-heading-3 {
+	background-color: #664466;
+}
+
+.box-content {
+	clear: right;
+    height:150px;
+	text-align: justify;
+	width: 95%;	
+	padding-right: 5%;	
+	margin-right: 0px;
+	margin-left: auto;
+	margin-top:10px;
+	color: white;
+	overflow: auto;
+}
+
+.p {
+	border: 1px solid black;
+	background-color: #A52A2A;
+	font-family: Helvetica;
+}
+
+.row {
+	width: 100%;
+}
+
+/*** Desktop [992,...) ***/
+@media (min-width: 992px) {
+	.col-d-1, .col-d-2, .col-d-3 {
+		float: left;
+		/*border: 1px solid green;*/
+	}
+	.col-d-1 {
+		width: 33.33%;
+	}
+	.col-d-2 {
+		width: 66.66%;
+	}
+	.col-d-3 {
+		width: 100%;
+	}
+}
+
+/*** Tablet [768,...,991] ***/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-t-1, .col-t-2 {
+		float: left;
+		/*border: 1px solid green;*/
+	}
+	.col-t-1 {
+		width: 50%;
+	}
+	.col-t-2 {
+		width: 100%;
+	}
+}
+
+/*** Mobile (...,767] ***/
+@media (max-width: 767px) {
+	.col-m-1 {
+		float: left;
+		/*border: 1px solid green;*/
+		width: 100%;
+	}
+}
     
+</style>
+<body>
+    <h1>Our Menu</h1>
+		<div class="row">		
+		<div class="col-d-1 col-t-1 col-m-1">
+			<section class="box">
+				<h3 class="box-heading box-heading-1">Chicken</h3>
+				<p class="box-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. In fuga omnis minus. Debitis ad expedita eos ab molestias deserunt quo soluta porro voluptatem ex ipsam officiis mollitia deleniti, delectus consequuntur nesciunt quasi laborum sed beatae. Dolorum, placeat incidunt cumque sed ipsa et eos officiis unde fuga officia blanditiis quae mollitia.</p>
+			</section>
+		</div>
+		<div class="col-d-1 col-t-1 col-m-1">
+			<section class="box">
+				<h3 class="box-heading box-heading-2">Meat</h3>
+				<p class="box-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit ratione eaque deserunt iusto minus molestiae nam sed ut, perspiciatis nesciunt inventore nulla dignissimos iste fugit. Repudiandae, aut id vero voluptates necessitatibus quaerat modi illo facilis earum, similique quia eaque neque? Similique dolorum totam voluptatibus dolorem sapiente, iure distinctio laboriosam reiciendis?</p>
+			</section>
+		</div>
+		<div class="col-d-1 col-t-2 col-m-1">
+			<section class="box">
+				<h3 class="box-heading box-heading-3">something other thing that we eat</h3>
+				<p class="box-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta qui corrupti ducimus voluptates quisquam fuga, cupiditate doloribus deleniti. Illum, voluptate ipsum voluptas quidem quisquam corporis nostrum delectus dolores. Odit repellat aliquid porro suscipit, quae in error nostrum sunt! Nihil amet dicta possimus eligendi odit incidunt perferendis. Accusantium vel molestias ratione!</p>
+			</section>
+		</div>
+		</div>
 </body>
 </html>
